@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pro Auto Body: Taller de Reparación de Autos</title>
+
+		<!-- Short description of the document (limit to 150 characters) -->
+		<!-- This content *may* be used as a part of search engine results. -->
+		<meta
+			name="title"
+			content="Taller de reparación de autos en Rockville, MD. Pintura, abolladuras, rayones, reparación de colisiones. ¡Llámenos hoy!" />
+		<meta
+			name="description"
+			content="Taller de carrocería en Rockville, MD" />
+
+		<!-- Control the behavior of search engine crawling and indexing -->
+		<meta name="robots" content="index,follow" />
+		<!-- All Search Engines -->
+		<meta name="googlebot" content="index,follow" />
+		<!-- Google Specific -->
+
+		<!-- For IE 10 and below -->
+		<!-- Place favicon.ico in the root directory - no tag necessary -->
+		<!-- Icon in the highest resolution we need it for -->
+		<link
+			rel="icon"
+			sizes="192x192"
+			href="/assets/android-chrome-192x192.png" />
+
+		<!-- Apple Touch Icon (reuse 192px icon.png) -->
+		<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+
+		<!-- Safari Pinned Tab Icon -->
+		<link rel="mask-icon" href="/assets/favicon-32x32.png" color="blue" />
+
+		<!-- Apple iOS -->
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			:root {
+				--complementary-color: #5884a6;
+				--dark-color: #2b2c33;
+				--dark-color-with-opacity: #2b2c3312;
+				--light-color: #f2f2f2;
+				--primary-color: #0078ca;
+				--white-color: #ffffff;
+				--highlight-color: rgb(215, 233, 255);
+				--background-gradient: linear-gradient(
+					to right,
+					rgb(170, 0, 255),
+					rgb(124, 77, 255)
+				);
+			}
+			@keyframes scaling {
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.05);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
+
+			/* Common mobile-first styles (applied to all screen sizes) */
+
+			/* Mobile Phones */
+			@media screen and (min-width: 0px) {
+				html {
+					margin: 0;
+				}
+				/* CSS rules for mobile phones */
+				body {
+					background-color: var(--light-color);
+					color: var(--dark-color);
+					font-family: Arial, Helvetica, sans-serif;
+					line-height: 31px;
+					padding: 1rem 1rem 0rem 1rem;
+					max-width: 720px;
+					margin: 0 auto;
+				}
+
+				h1 {
+					font-size: 2rem;
+					font-size: clamp(
+						2.27rem,
+						1.9537037037037037rem + 0.24691358024691357vw,
+						2.25rem
+					);
+					line-height: 1.3;
+					margin-bottom: 0.25rem;
+					text-align: center;
+				}
+
+				p {
+					margin-top: 1rem;
+				}
+
+				li:not(:first-child) {
+					margin-top: 0.5rem;
+				}
+
+				h3 {
+					color: rgb(189, 0, 189);
+					font-style: italic;
+					background-color: white;
+					padding: calc(50% / 2) 0;
+					border: 2px solid #2b2c33;
+				}
+
+				h4 {
+					font-size: 1.25rem;
+					font-size: clamp(
+						1.25rem,
+						1.1111111111111112rem + 0.7407407407407408vw,
+						2rem
+					);
+					margin-top: 2rem;
+				}
+
+				p,
+				span,
+				a,
+				ul {
+					font-size: 1.15rem;
+					font-size: clamp(
+						1.15rem,
+						1.2037037037037037rem + 0.24691358024691357vw,
+						1.15rem
+					);
+				}
+
+				blockquote {
+					margin: 1rem 0;
+					font-style: italic;
+				}
+				blockquote i {
+					color: black;
+					background-color: var(--highlight-color);
+				}
+
+				span {
+					background-color: var(--highlight-color);
+					color: black;
+					font-style: italic;
+				}
+
+				ul {
+					padding-left: 16px;
+				}
+
+				a {
+					color: var(--primary-color);
+					text-decoration: none;
+				}
+
+				.logo {
+					height: 240px;
+					width: 240px;
+					margin: -3rem 0 -6rem 0;
+				}
+
+				.join__button {
+					background: var(--background-gradient);
+					border-radius: 5px;
+					box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+						0 10px 10px rgba(0, 0, 0, 0.22);
+					color: white;
+					display: inline-block;
+					line-height: 1;
+					padding: 20px 32px;
+					margin: 1.5rem 0 1rem 0;
+					text-decoration: none;
+					text-align: center;
+				}
+			}
+
+			/* ONLY PHONES */
+			@media screen and (max-width: 768px) {
+				h1 {
+					margin-top: 0.5rem;
+					position: relative;
+					text-align: center;
+				}
+
+				h1::after {
+					content: "";
+					position: absolute;
+					width: 80%;
+					display: block;
+					height: 5px;
+					background-color: var(--dark-color);
+					bottom: -5px;
+					left: 10%;
+				}
+
+				body {
+					position: relative;
+				}
+
+				.side__line {
+					background-color: var(--dark-color-with-opacity);
+					display: block;
+					height: 2px;
+					position: absolute;
+					top: 0;
+					left: 8px;
+					transform-origin: top left; /* To rotate from top-left corner */
+					transform: translateY(58%) rotate(90deg);
+				}
+
+				.round {
+					background: var(--background-gradient);
+					border-radius: 50%;
+					box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+						0 15px 12px rgba(0, 0, 0, 0.22);
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 100px;
+					position: fixed;
+					bottom: 0.75rem;
+					right: 0.75rem;
+					width: 100px;
+				}
+				.round > div {
+					font-size: 3rem;
+				}
+
+				.telephone-fill {
+					animation: scaling 8s infinite alternate ease-in-out;
+				}
+			}
+
+			/* Tablets */
+			@media screen and (min-width: 768px) {
+				/* CSS rules for tablets */
+				.round {
+					display: none;
+				}
+			}
+
+			/* Desktops */
+			@media screen and (min-width: 1200px) {
+				/* CSS rules for desktops */
+			}
+		</style>
+		<script>
+			(() => {
+				const $ = document.querySelector.bind(document);
+				const $$ = document.querySelectorAll.bind(document);
+				const log = console.log.bind(console);
+
+				document.addEventListener("DOMContentLoaded", function () {
+					log(document.body.scrollHeight);
+					const sideline__el = $(".side__line");
+					sideline__el.style.width = `${
+						document.body.scrollHeight - 10
+					}px `;
+				});
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="side__line"></div>
+
+		<header style="text-align: center">
+			<img
+				src="/assets/proautobody.png"
+				alt="logotipo de Pro Auto Body"
+				class="logo" />
+			<h1>Pro Auto Body</h1>
+			<div style="text-align: center">
+				<em>Taller de Reparación de Autos</em>
+			</div>
+		</header>
+
+		<h4>¿Qué hacen?</h4>
+		<p>
+			🚙 Reparamos autos. Se llama Reparación de Colisiones, pero eso solo
+			significa arreglos de accidentes.
+		</p>
+
+		<h4>¿Cuánto cuesta?</h4>
+		<p><a href="tel:+13015455130">Solicita un presupuesto.</a></p>
+
+		<div style="margin-top: 3rem">
+			<span
+				>"¡Gran trabajo y equipo! Siempre lo recomendaré" - Jonathan Denson,
+				en Google.</span
+			>
+		</div>
+
+		<h4>¿Por qué elegirnos?</h4>
+		<ul>
+			<li>Servicio honesto y confiable.</li>
+			<li>Sin ventas adicionales.</li>
+			<li>Sin cargos ocultos.</li>
+			<li>La asistencia que necesitas, cuando la necesitas.</li>
+			<li>⭐⭐⭐⭐⭐ 5 estrellas en Google.</li>
+		</ul>
+
+		<h4>¿Cómo encontrarnos?</h4>
+		<p>
+			📌 Nuestra ubicación en
+			<a href="https://maps.app.goo.gl/VHxAQPHpkHb2iUUi7"
+				>Rockville, Maryland</a
+			>.
+		</p>
+
+		<h4>Estoy listo, ¿y ahora qué?</h4>
+		<div>Para direcciones, haz clic en esta dirección.</div>
+		<a href="https://maps.app.goo.gl/VHxAQPHpkHb2iUUi7"
+			><address>1621 E Gude Dr, Rockville, MD 20850</address></a
+		>
+		<div>Para citas, llama a este número.</div>
+		<a href="tel:+13015455130">+1 (301) 545-5130</a>
+		<div>
+			<a href="tel:+13015455130" class="join__button">
+				<div>
+					<strong>Estoy listo para llamar</strong><br />
+					<em style="font-size: 0.9rem">(Leí todo)</em>
+				</div>
+			</a>
+		</div>
+		<a href="tel:+13015455130" class="round"
+			><svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="52"
+				height="52"
+				fill="white"
+				class="telephone-fill"
+				viewBox="0 0 16 16">
+				<path
+					fill-rule="evenodd"
+					d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" /></svg
+		></a>
+		<!-- <h4>What sets us apart?</h4>
+     <p>
+         En Pro Auto Body, no se trata solo de reparar autos; se trata de construir relaciones. Nuestra dedicación al trabajo de calidad, precios transparentes y excelente servicio al cliente nos convierte en la opción preferida de los dueños de autos en Rockville.
+     </p> -->
+
+		<footer style="margin-top: 3rem; text-align: center">
+			<div style="margin-top: 5rem">
+				<strong>¿Por qué este sitio se ve tan feo?</strong> <br />
+				Un diseño limpio es más fácil de usar, carga más rápido, y convierte
+				mejor.
+			</div>
+			<div style="font-size: 0.75rem">
+				Copyright © 2023 - Todos los derechos reservados - Diseñado por
+				<a href="https://www.wilfredoflores.dev" style="font-size: 0.75rem"
+					>Yo</a
+				>
+			</div>
+		</footer>
+	</body>
+</html>
