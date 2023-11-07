@@ -160,6 +160,17 @@
 	footer > div > a {
 		font-size: 0.75rem;
 	}
+
+	.faq {
+		list-style-type: none;
+		padding-left: 0;
+	}
+	/* .faq > li > h5:hover {
+		cursor: pointer;
+	} */
+	.faq > li > p {
+		margin-top: 0.25rem;
+	}
 }
 
 /* ONLY PHONES */
