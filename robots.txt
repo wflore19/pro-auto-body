@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /assets/
 Disallow: /favicon.ico/
-Disallow: content.txt
+Disallow: /content.txt
