@@ -118,6 +118,11 @@
 		text-decoration: none;
 	}
 
+	.lang {
+		position: relative;
+		z-index: 100;
+	}
+
 	.logo {
 		height: auto;
 		width: 100%;
@@ -131,6 +136,11 @@
 		margin: 1rem 0;
 	}
 
+	.flex > * {
+		flex: 1;
+		width: 50%;
+	}
+
 	.ux__button {
 		background-color: var(--light-color-var);
 		border: 1px solid var(--dark-color-with-opacity);
@@ -142,6 +152,7 @@
 		font-size: smaller;
 		font-weight: bold;
 		padding: 12px 16px;
+		text-align: center;
 	}
 	.ux__button:hover {
 		box-shadow: var(--shadow-2);
@@ -166,6 +177,9 @@
 		margin: 1.5rem 0 1rem 0;
 		text-decoration: none;
 		text-align: center;
+	}
+	.join__button:hover {
+		box-shadow: var(--shadow-5);
 	}
 
 	.join__button > em {
@@ -239,7 +253,7 @@
 	.round {
 		background: var(--background-gradient);
 		border-radius: 50%;
-		box-shadow: var(--shadow-5);
+		box-shadow: var(--shadow-4);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -248,13 +262,14 @@
 		bottom: 0.75rem;
 		right: 0.75rem;
 		width: 100px;
-	}
-	.round > div {
 		font-size: 3rem;
+	}
+	.round:hover {
+		box-shadow: var(--shadow-5);
 	}
 
 	.telephone-fill {
-		animation: scaling 8s infinite alternate ease-in-out;
+		animation: scaling 6s infinite alternate ease-in-out;
 	}
 }
 
