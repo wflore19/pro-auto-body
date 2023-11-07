@@ -126,6 +126,14 @@
 		margin: -3rem 0 -6rem 0;
 	}
 
+	.google__review {
+		margin-top: 3rem;
+	}
+
+	.tc {
+		text-align: center;
+	}
+
 	.join__button {
 		background: var(--background-gradient);
 		border-radius: 5px;
@@ -138,6 +146,27 @@
 		margin: 1.5rem 0 1rem 0;
 		text-decoration: none;
 		text-align: center;
+	}
+
+	.join__button > em {
+		font-size: 0.9rem;
+	}
+
+	footer {
+		margin-top: 3rem;
+		text-align: center;
+	}
+
+	footer > div:first-child {
+		margin-top: 5rem;
+	}
+
+	footer > div:last-child {
+		font-size: 0.75rem;
+	}
+
+	footer > div > a {
+		font-size: 0.75rem;
 	}
 }
 
