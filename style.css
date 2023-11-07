@@ -7,6 +7,7 @@
 	--dark-color: #2b2c33;
 	--dark-color-with-opacity: #2b2c3312;
 	--light-color: #f2f2f2;
+	--light-color-var: #e1e1e1;
 	--primary-color: #0078ca;
 	--white-color: #ffffff;
 	--highlight-color: rgb(215, 233, 255);
@@ -15,6 +16,11 @@
 		rgb(170, 0, 255),
 		rgb(124, 77, 255)
 	);
+	--shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	--shadow-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	--shadow-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	--shadow-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	--shadow-5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 @keyframes scaling {
 	0% {
@@ -119,6 +125,28 @@
 		margin: -3rem 0 -6rem 0;
 	}
 
+	.flex {
+		display: flex;
+		gap: 4px;
+		margin: 1rem 0;
+	}
+
+	.ux__button {
+		background-color: var(--light-color-var);
+		border: 1px solid var(--dark-color-with-opacity);
+		border-radius: 0.5rem;
+		box-shadow: var(--shadow-1);
+		color: var(--dark-color);
+		cursor: pointer;
+		flex: 1 1 auto;
+		font-size: smaller;
+		font-weight: bold;
+		padding: 12px 16px;
+	}
+	.ux__button:hover {
+		box-shadow: var(--shadow-2);
+	}
+
 	.google__review {
 		margin-top: 3rem;
 	}
@@ -130,8 +158,7 @@
 	.join__button {
 		background: var(--background-gradient);
 		border-radius: 5px;
-		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-			0 10px 10px rgba(0, 0, 0, 0.22);
+		box-shadow: var(--shadow-4);
 		color: white;
 		display: inline-block;
 		line-height: 1;
@@ -212,8 +239,7 @@
 	.round {
 		background: var(--background-gradient);
 		border-radius: 50%;
-		box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
-			0 15px 12px rgba(0, 0, 0, 0.22);
+		box-shadow: var(--shadow-5);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -235,6 +261,18 @@
 /* Tablets */
 @media screen and (min-width: 768px) {
 	/* CSS rules for tablets */
+	.logo {
+		height: 50%;
+		width: 50%;
+		aspect-ratio: 1.29;
+		margin: -3rem 0 -6rem 0;
+	}
+
+	.flex {
+		margin: 1rem auto;
+		width: 50%;
+	}
+
 	.round {
 		display: none;
 	}
