@@ -213,6 +213,42 @@
 	.faq > li > p {
 		margin-top: 0.25rem;
 	}
+
+	.google__card {
+		background-color: #fafafb;
+		border-radius: 8px;
+		padding: 8px 12px;
+	}
+	.google__card > p {
+		font-size: 14px;
+		line-height: 1.2;
+		margin: 8px 0;
+	}
+
+	.justify-between {
+		display: flex;
+		justify-content: space-between;
+	}
+	.google__customer__card {
+		align-items: start;
+		display: flex;
+		gap: 8px;
+		margin-top: 8px;
+	}
+	.google__customer__card > div:last-child {
+		margin: 0 !important;
+	}
+	.google__customer__card > div > div:first-child {
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 1;
+	}
+	.google__customer__card > div > div:last-child {
+		color: #2b2c3395;
+		font-size: 14px;
+		line-height: 1;
+		margin: 4px 0;
+	}
 }
 
 /* ONLY PHONES */
