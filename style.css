@@ -65,7 +65,7 @@
 	}
 
 	p {
-		margin-top: 1rem;
+		margin-top: 12px;
 	}
 
 	li:not(:first-child) {
@@ -79,18 +79,17 @@
 			1.1111111111111112rem + 0.7407407407407408vw,
 			2rem
 		);
-		margin-top: 2rem;
+		margin: 16px 0 3px 0;
 	}
 
 	p,
 	span,
 	a,
 	ul {
-		font-size: 1.15rem;
 		font-size: clamp(
-			1.15rem,
+			16px,
 			1.2037037037037037rem + 0.24691358024691357vw,
-			1.15rem
+			20px
 		);
 	}
 
@@ -158,10 +157,6 @@
 		box-shadow: var(--shadow-2);
 	}
 
-	.google__review {
-		margin-top: 3rem;
-	}
-
 	.tc {
 		text-align: center;
 	}
@@ -214,6 +209,11 @@
 		margin-top: 0.25rem;
 	}
 
+	.google__review {
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
+
 	.google__card {
 		background-color: #fafafb;
 		border-radius: 8px;
@@ -249,6 +249,24 @@
 		line-height: 1;
 		margin: 4px 0;
 	}
+
+	.button {
+		background-color: #a40bff;
+		border: 1px solid #a40bff;
+		border-radius: 4px;
+		color: var(--light-color);
+		font-size: 14px;
+		padding: 4px 52px;
+	}
+
+	.button.outline {
+		background-color: transparent;
+		border: 1px solid #a40bff;
+		border-radius: 4px;
+		color: #a40bff;
+		font-size: 14px;
+		padding: 4px 52px;
+	}
 }
 
 /* ONLY PHONES */
@@ -267,7 +285,7 @@
 		display: block;
 		height: 5px;
 		background-color: var(--dark-color);
-		bottom: -5px;
+		bottom: -1px;
 		left: 0%;
 	}
 
@@ -293,12 +311,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 100px;
+		height: 80px;
 		position: fixed;
 		bottom: 0.75rem;
 		right: 0.75rem;
-		width: 100px;
-		font-size: 3rem;
+		width: 80px;
+		font-size: 12px;
 	}
 	.round:hover {
 		box-shadow: var(--shadow-5);
